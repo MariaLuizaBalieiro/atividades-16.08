@@ -17,7 +17,7 @@ body{
     gap: 16px;
 }
 .item{
-    background-color: #e50f89;
+    background-color: plum;
     height: 50px;
     display: flex;
     justify-content: center;

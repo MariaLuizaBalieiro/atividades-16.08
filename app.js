@@ -1,7 +1,7 @@
 'use strict'
 
 const botaoSomar = document.getElementById('Somar')
-const botaoIdentificar = document.getElementById('Identificar')
+const botaoIdentificar - document.getElementById('Identificar')
 
 function somar(){
     const numero1 = parseInt (document.getElementById('num1').value)
@@ -10,44 +10,28 @@ function somar(){
 
 
     const total = numero1 + numero2
-     resultado.textContent = total }
+
+     resultado.textContent = total
       
 
 
 
-function Identificar (){
+function identificar (){
     const numero = Number(document.getElementById('num-item2').value)
-    const resultado = Number (document.getElementById('resultado-item2'))
+    const resultado = document.getElementById('resultado-item2')
     let msg
     if (numero > 0){
-       const msg = 'POSITIVO' 
+       const msg = 'número digitado é positivo' 
     }else if(numero < 0){
-        const msg = 'NEGATIVO'
+        const msg = 'número digitado é negativo'
     }else{
-        const msg = 'ZERO'
+        const msg = 'número digitado é zero'
     }
 resultado.textContent = msg
    
 }
 
+}
 
-function somar(){
-    const N1 = parseInt (document.getElementById('num1').value)
-    const N2 = parseInt (document.getElementById('num2').value)
-    const N3 = parseInt (document.getElementById('num3').value)
-    const N4 = parseInt (document.getElementById('num4').value)
-    
-    
-    const resultado = document.getElementById('resultado')
-
-
-    const total = N1 + N2 + N3+ N4
-     resultado.textContent = total }
-
-
-     botaoSomar.addEventListener('click', somar)
- botaoIdentificar.addEventListener('click', Identificar)
- 
-
-
-
+botaoSomar.addEventListener('click', somar)
+botaoIdentificar.addEventListener('click', identificar)
